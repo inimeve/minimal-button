@@ -1,0 +1,251 @@
+$defaultColor: #ACB3B9;
+$primaryColor: #00A7E1;
+$secondaryColor: #FA7921;
+$successColor: #16DB93;
+$dangerColor: #E63B2E;
+$warningColor: #F3DE2C;
+
+$btnVerticalPadding: 1rem;
+$btnHorizontalPadding: 2rem;
+
+.minimal-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: $btnVerticalPadding $btnHorizontalPadding;
+    outline: none;
+    border: 2px solid $defaultColor;
+    color: darken($defaultColor, 15%);
+
+    &:hover {
+        background-color: $defaultColor;
+        color: white;
+    }
+
+    &:active {
+        background-color:darken($defaultColor, 10%);
+    }
+
+
+    &.filled {
+        background-color: $defaultColor;
+        color: lighten($defaultColor, 80%);
+
+        &:hover {
+            background-color: lighten($defaultColor, 10%);
+            color: darken($defaultColor, 40%);
+        }
+    
+        &:active {
+            background-color:lighten($defaultColor, 15%);
+        }   
+    }
+
+
+    &--primary {
+        border: 2px solid $primaryColor;
+        color: darken($primaryColor, 5%);
+
+        &:hover {
+            background-color: $primaryColor;
+            color: white;
+        }
+
+        &:active {
+            background-color:darken($primaryColor, 10%);
+        }
+
+        &.filled {
+            background-color: $primaryColor;
+            color: lighten($primaryColor, 80%);
+    
+            &:hover {
+                background-color: lighten($primaryColor, 10%);
+                color: darken($primaryColor, 25%);
+            }
+        
+            &:active {
+                background-color:lighten($primaryColor, 15%);
+            }   
+        }
+    }
+
+    &--secondary {
+        border: 2px solid $secondaryColor;
+        color: darken($secondaryColor, 5%);
+
+        &:hover {
+            background-color: $secondaryColor;
+            color: white;
+        }
+
+        &:active {
+            background-color:darken($secondaryColor, 10%);
+        }
+
+        &.filled {
+            background-color: $secondaryColor;
+            color: lighten($secondaryColor, 80%);
+    
+            &:hover {
+                background-color: lighten($secondaryColor, 10%);
+                color: darken($secondaryColor, 25%);
+            }
+        
+            &:active {
+                background-color:lighten($secondaryColor, 15%);
+            }   
+        }
+    }
+
+    &--success {
+        border: 2px solid $successColor;
+        color: darken($successColor, 5%);
+
+        &:hover {
+            background-color: $successColor;
+            color: white;
+        }
+
+        &:active {
+            background-color:darken($successColor, 10%);
+        }
+
+        &.filled {
+            background-color: $successColor;
+            color: lighten($successColor, 80%);
+    
+            &:hover {
+                background-color: lighten($successColor, 10%);
+                color: darken($successColor, 25%);
+            }
+        
+            &:active {
+                background-color:lighten($successColor, 15%);
+            }   
+        }
+    }
+
+    &--danger {
+        border: 2px solid $dangerColor;
+        color: darken($dangerColor, 5%);
+
+        &:hover {
+            background-color: $dangerColor;
+            color: white;
+        }
+
+        &:active {
+            background-color:darken($dangerColor, 10%);
+        }
+
+        &.filled {
+            background-color: $dangerColor;
+            color: lighten($dangerColor, 80%);
+    
+            &:hover {
+                background-color: lighten($dangerColor, 10%);
+                color: darken($dangerColor, 25%);
+            }
+        
+            &:active {
+                background-color:lighten($dangerColor, 15%);
+            }   
+        }
+    }
+   
+    &--warning {
+        border: 2px solid $warningColor;
+        color: darken($warningColor, 5%);
+
+        &:hover {
+            background-color: $warningColor;
+            color: white;
+        }
+
+        &:active {
+            background-color:darken($warningColor, 10%);
+        }
+
+        &.filled {
+            background-color: $warningColor;
+            color: lighten($warningColor, 80%);
+    
+            &:hover {
+                background-color: lighten($warningColor, 10%);
+                color: darken($warningColor, 25%);
+            }
+        
+            &:active {
+                background-color:lighten($warningColor, 15%);
+            }   
+        }
+    }
+
+
+    &.rounded {
+        border-radius: 100px;
+    }
+
+    &.rounded-edges {
+        border-radius: 10px;
+    }
+
+
+    .glyphicon {
+        position: relative;
+        font-size: 1.1em;
+        
+        &.icon-pos-right {
+            top: 0.2em;
+            left: $btnHorizontalPadding/3;
+        }
+        
+        &.icon-pos-left {
+            top: 0.2em;
+            right: $btnHorizontalPadding/3;
+        }
+    }
+    
+    &--large {
+        $btnVerticalPaddingLarge: $btnVerticalPadding*2;
+        $btnHorizontalPaddingLarge:$btnHorizontalPadding*2;
+        padding: $btnVerticalPaddingLarge $btnHorizontalPaddingLarge;
+
+        .glyphicon {
+            position: relative;
+            font-size: 1.1em;
+            
+            &.icon-pos-right {
+                top: 0.2em;
+                left: $btnHorizontalPaddingLarge/3;
+            }
+            
+            &.icon-pos-left {
+                top: 0.2em;
+                right: $btnHorizontalPaddingLarge/3;
+            }
+        }
+    }
+
+    &--small {
+        $btnVerticalPaddingSmall: $btnVerticalPadding/2;
+        $btnHorizontalPaddingSmall:$btnHorizontalPadding/2;
+        padding: $btnVerticalPaddingSmall $btnHorizontalPaddingSmall;
+
+        .glyphicon {
+            position: relative;
+            font-size: 1.1em;
+            
+            &.icon-pos-right {
+                top: 0.2em;
+                left: $btnHorizontalPaddingSmall/3;
+            }
+            
+            &.icon-pos-left {
+                top: 0.2em;
+                right: $btnHorizontalPaddingSmall/3;
+            }
+        }
+    }
+
+
+}

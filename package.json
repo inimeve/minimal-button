@@ -1,0 +1,26 @@
+{
+    "name": "minimal-button",
+    "description": "Minimal button for angularJs",
+    "version": "0.0.12",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "rimraf dist && npm run styles && npm run html && tsc",
+        "html": "copyfiles src/*.html ./dist -f",
+        "styles": "node-sass src/minimal-button.scss -o dist/"
+    },
+    "devDependencies": {
+        "@types/angular": "^1.6.51",
+        "@types/node": "^10.12.0",
+        "copyfiles": "^2.1.0",
+        "node-sass": "^4.9.4",
+        "rimraf": "^2.6.2",
+        "typescript": "^2.6.2"
+    },
+    "peerDependencies": {
+        "bootstrap": "^3.3.0"
+    },
+    "dependencies": {
+        "angular": "^1.7.5"
+    }
+}
