@@ -4,8 +4,19 @@ export class MinimalButtonController {
 
     private cssClass: string;
 
+    onClick: (event: any) => void;
+
+
     constructor(){}
     
-    private $onInit() {}
+
+    private $onInit() {
+        this.onClick = this.onClick || (() => {});
+    }
+
+
+    private onClickWrapper = (event: any) => {
+        this.onClick(event);
+    }
 
 }

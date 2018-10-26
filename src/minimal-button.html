@@ -1,3 +1,6 @@
-<button id="{{$ctrl.id}}" class="minimal-btn {{$ctrl.cssClass}}">
+<button 
+    id="{{$ctrl.id}}" 
+    class="minimal-btn {{$ctrl.cssClass}}"
+    ng-click="$ctrl.onClickWrapper($event)">
     <ng-transclude></ng-transclude>
 </button>

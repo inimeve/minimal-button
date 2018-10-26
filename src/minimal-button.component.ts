@@ -15,7 +15,8 @@ export class MinimalButtonComponent implements ng.IComponentOptions {
 
         this.bindings = {
             id: '@',
-            cssClass: '@'
+            cssClass: '@',
+            onClick: '&'
         };
 
         this.template = require('./minimal-button.html');
